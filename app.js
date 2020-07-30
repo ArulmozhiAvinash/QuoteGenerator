@@ -42,6 +42,10 @@ async function getQuoteFromAPI() {
         removeLoadingSpinner();
     } catch(error) {
         console.log(error);
+        quoteText.innerText = 'You only live once, but if you do it right, once is enough.';
+        quoteAuthor.innerText = 'Mae West';
+        
+        removeLoadingSpinner();
     }
 }
 
